@@ -15,8 +15,7 @@ const gameSchema = new mongoose.Schema({
     descriptions: [descriptionSchema] //Array de ojetos
 })
 
-// Aqui está sendo cirado a coleção games no banco de dados
+// Aqui está sendo criado a coleção games no banco de dados
 const game = mongoose.model('game', gameSchema)
-const description = mongoose.model('description', descriptionSchema)
 
 export default game

@@ -8,11 +8,12 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.21.2",
-    "mongodb": "^6.14.2",
+    "mongodb": "^6.15.0",
     "mongoose": "^8.11.0"
   },
-  "type": "module"
+  "type": "module",
+  "keywords": [],
+  "description": ""
 }

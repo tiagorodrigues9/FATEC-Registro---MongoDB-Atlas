@@ -1,5 +1,5 @@
 import express from 'express'
-import mongoose from 'mongoose'
+import mongoose from './config/db-connection.js'
 import game from "./models/games.js"
 const app = express()
 
@@ -12,7 +12,7 @@ app.use(express.json())
 app.use("/", gameRoutes)
 
 // Iniciando a conexão com o banco de dados do MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/api-thegame")
+// mongoose.connect("mongodb://127.0.0.1:27017/api-thegame")
 
 // Rota Principal
 app.get("/", (req, res) =>{
@@ -35,7 +35,7 @@ app.get("/", (req, res) =>{
 })
 
 // Iniciando o servidor
-const port = 4000
+const port = 4000 
 app.listen(port, (error) =>{
     if(error){
         console.log(error)
